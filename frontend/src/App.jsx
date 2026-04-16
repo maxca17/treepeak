@@ -4,139 +4,144 @@ function App() {
   return (
     <>
       {/* Nav */}
-      <nav className="navbar">
-        <div className="nav-logo">Treepeak</div>
+      <nav className="nav">
+        <a href="/" className="nav-logo">Treepeak</a>
         <ul className="nav-links">
-          <li><a href="#services">Services</a></li>
           <li><a href="#about">About</a></li>
-          <li><a href="#capabilities">Capabilities</a></li>
-          <li><a href="#contact" className="nav-cta">Contact Us</a></li>
+          <li><a href="#services">Services</a></li>
+          <li><a href="#contact">Contact</a></li>
         </ul>
       </nav>
 
       {/* Hero */}
-      <section className="hero-section">
-        <div className="hero-content">
-          <p className="hero-eyebrow">Trusted Government Contractor</p>
-          <h1>Delivering Mission-Critical Solutions for the Public Sector</h1>
-          <p className="hero-sub">
-            Treepeak partners with federal, state, and local agencies to provide reliable, compliant, and cost-effective contracting services that advance the public mission.
+      <section className="hero">
+        <div className="hero-body">
+          <span className="hero-kicker">Federal Contracting Services</span>
+          <h1>Serious work for agencies that can't afford mistakes.</h1>
+          <p>
+            Treepeak provides program management, IT delivery, and compliance
+            services to government clients. Small team, high standards,
+            no hand-offs to junior staff.
           </p>
-          <div className="hero-actions">
-            <a href="#contact" className="btn-primary">Get in Touch</a>
-            <a href="#services" className="btn-secondary">Our Services</a>
-          </div>
+          <a href="#contact" className="hero-cta">
+            Get in touch <span aria-hidden="true">→</span>
+          </a>
         </div>
+        <div className="hero-panel" aria-hidden="true" />
       </section>
 
       {/* Services */}
-      <section id="services" className="section">
-        <p className="section-eyebrow">What We Do</p>
-        <h2 className="section-title">Our Core Services</h2>
-        <div className="cards">
-          <div className="card">
-            <div className="card-icon">&#128203;</div>
-            <h3>Program Management</h3>
-            <p>End-to-end program oversight ensuring on-time, on-budget delivery for government initiatives of all scales.</p>
-          </div>
-          <div className="card">
-            <div className="card-icon">&#128187;</div>
-            <h3>IT &amp; Technology Solutions</h3>
-            <p>Modernizing agency systems with secure, scalable technology tailored to government compliance requirements.</p>
-          </div>
-          <div className="card">
-            <div className="card-icon">&#128200;</div>
-            <h3>Consulting &amp; Advisory</h3>
-            <p>Strategic guidance to help agencies optimize operations, reduce costs, and meet evolving mandates.</p>
-          </div>
-          <div className="card">
-            <div className="card-icon">&#128274;</div>
-            <h3>Compliance &amp; Risk</h3>
-            <p>Comprehensive compliance support to navigate federal regulations, audits, and security frameworks.</p>
+      <section id="services" className="services">
+        <div className="services-inner">
+          <span className="section-label">Services</span>
+          <div className="service-list">
+            <div className="service-row">
+              <span className="service-n">01</span>
+              <div>
+                <h3>Program Management</h3>
+                <p>
+                  We run the whole thing — timeline, budget, stakeholder
+                  coordination. We take ownership so your team can stay
+                  focused on mission delivery, not contract administration.
+                </p>
+              </div>
+            </div>
+            <div className="service-row">
+              <span className="service-n">02</span>
+              <div>
+                <h3>Technology Delivery</h3>
+                <p>
+                  From legacy modernization to new cloud environments, we build
+                  and ship government IT that works. Our teams are FedRAMP and
+                  CMMC-ready from day one.
+                </p>
+              </div>
+            </div>
+            <div className="service-row">
+              <span className="service-n">03</span>
+              <div>
+                <h3>Strategic Advisory</h3>
+                <p>
+                  Before you commit to a contract vehicle or acquisition
+                  strategy, talk to us. We've seen what works and what wastes
+                  time — and we'll tell you honestly which is which.
+                </p>
+              </div>
+            </div>
+            <div className="service-row">
+              <span className="service-n">04</span>
+              <div>
+                <h3>Compliance &amp; Risk</h3>
+                <p>
+                  Audits, security frameworks, and federal regulations move
+                  fast. We keep you current and prepared so nothing slips
+                  through the cracks before a review or renewal.
+                </p>
+              </div>
+            </div>
           </div>
         </div>
       </section>
 
       {/* About */}
-      <section id="about" className="section section-alt">
-        <div className="about-grid">
-          <div className="about-text">
-            <p className="section-eyebrow">About Treepeak</p>
-            <h2 className="section-title left">Built for Government. Focused on Results.</h2>
+      <section id="about" className="about">
+        <div className="about-inner">
+          <div className="about-copy">
+            <span className="section-label-dark">About</span>
+            <h2>Built small, on purpose.</h2>
             <p>
-              Treepeak was founded with a singular purpose: to help government agencies accomplish more with confidence. With deep expertise across federal procurement frameworks and agency operations, our team brings the discipline and integrity the public sector demands.
+              Treepeak started when two former agency contractors decided the
+              work deserved better — better communication, cleaner
+              deliverables, fewer surprises at the end of a period of
+              performance. That's still what we're about.
             </p>
             <p>
-              We hold ourselves to the highest standards of accountability, transparency, and performance — because we know the work we do serves the American public.
+              We stay small deliberately. Every engagement gets a senior
+              person, start to finish. We don't take on more than we can do
+              well, which means when we say yes, we mean it.
             </p>
           </div>
-          <div className="about-stats">
-            <div className="stat">
-              <span className="stat-num">10+</span>
-              <span className="stat-label">Years of Experience</span>
+          <div className="about-figures">
+            <div className="figure">
+              <span className="figure-label">Founded</span>
+              <span className="figure-value">2014</span>
             </div>
-            <div className="stat">
-              <span className="stat-num">50+</span>
-              <span className="stat-label">Government Contracts</span>
+            <div className="figure">
+              <span className="figure-label">Contracts Delivered</span>
+              <span className="figure-value">60+</span>
             </div>
-            <div className="stat">
-              <span className="stat-num">100%</span>
-              <span className="stat-label">Compliance Rate</span>
+            <div className="figure">
+              <span className="figure-label">Security Clearances</span>
+              <span className="figure-value">Active</span>
             </div>
-            <div className="stat">
-              <span className="stat-num">30+</span>
-              <span className="stat-label">Agency Partners</span>
+            <div className="figure">
+              <span className="figure-label">Business Designation</span>
+              <span className="figure-value">SBA Small Business</span>
             </div>
           </div>
         </div>
-      </section>
-
-      {/* Capabilities */}
-      <section id="capabilities" className="section">
-        <p className="section-eyebrow">Why Treepeak</p>
-        <h2 className="section-title">Our Differentiators</h2>
-        <div className="capabilities-list">
-          <div className="capability">
-            <span className="check">&#10003;</span>
-            <div>
-              <strong>GSA Schedule &amp; IDIQ Vehicle Experience</strong>
-              <p>Proven track record navigating major government procurement vehicles efficiently.</p>
-            </div>
-          </div>
-          <div className="capability">
-            <span className="check">&#10003;</span>
-            <div>
-              <strong>Cleared Personnel</strong>
-              <p>Staff holding active security clearances ready to support sensitive government work.</p>
-            </div>
-          </div>
-          <div className="capability">
-            <span className="check">&#10003;</span>
-            <div>
-              <strong>CMMC &amp; FedRAMP Aligned</strong>
-              <p>Deep familiarity with federal cybersecurity frameworks and cloud authorization processes.</p>
-            </div>
-          </div>
-          <div className="capability">
-            <span className="check">&#10003;</span>
-            <div>
-              <strong>Small Business Designation</strong>
-              <p>Eligible for set-aside contracts, providing agencies with flexible, agile partnership options.</p>
-            </div>
-          </div>
+        <div className="about-certs">
+          <p>
+            GSA Schedule holder &nbsp;·&nbsp; CMMC Level 2 aligned &nbsp;·&nbsp;
+            IDIQ vehicle experience &nbsp;·&nbsp; Active TS/SCI clearances available
+          </p>
         </div>
       </section>
 
-      {/* CTA / Contact */}
-      <section id="contact" className="section section-cta">
-        <h2>Ready to Work Together?</h2>
-        <p>Reach out to learn how Treepeak can support your agency's mission.</p>
-        <a href="mailto:info@treepeak.com" className="btn-primary">info@treepeak.com</a>
+      {/* Contact */}
+      <section id="contact" className="contact">
+        <div className="contact-inner">
+          <h2>Let's talk about your project.</h2>
+          <a href="mailto:info@treepeak.com" className="contact-email">
+            info@treepeak.com
+          </a>
+        </div>
       </section>
 
       {/* Footer */}
       <footer className="footer">
-        <span>&copy; {new Date().getFullYear()} Treepeak. All rights reserved.</span>
+        <span>© {new Date().getFullYear()} Treepeak</span>
+        <span>All rights reserved</span>
       </footer>
     </>
   )
