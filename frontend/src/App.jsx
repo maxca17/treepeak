@@ -49,17 +49,6 @@ function App() {
             <div className="service-row">
               <span className="service-n">02</span>
               <div>
-                <h3>Technology Delivery</h3>
-                <p>
-                  From legacy modernization to new cloud environments, we build
-                  and ship government IT that works. Our teams are FedRAMP and
-                  CMMC-ready from day one.
-                </p>
-              </div>
-            </div>
-            <div className="service-row">
-              <span className="service-n">03</span>
-              <div>
                 <h3>Strategic Advisory</h3>
                 <p>
                   Before you commit to a contract vehicle or acquisition
@@ -69,7 +58,7 @@ function App() {
               </div>
             </div>
             <div className="service-row">
-              <span className="service-n">04</span>
+              <span className="service-n">03</span>
               <div>
                 <h3>Compliance &amp; Risk</h3>
                 <p>
@@ -122,8 +111,7 @@ function App() {
         </div>
         <div className="about-certs">
           <p>
-            GSA Schedule holder &nbsp;·&nbsp; CMMC Level 2 aligned &nbsp;·&nbsp;
-            IDIQ vehicle experience &nbsp;·&nbsp; Active TS/SCI clearances available
+            GSA Schedule holder &nbsp;·&nbsp; IDIQ vehicle experience &nbsp;·&nbsp; Active TS/SCI clearances available
           </p>
         </div>
       </section>
