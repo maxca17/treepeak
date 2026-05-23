@@ -25,7 +25,6 @@ function App() {
             Get in touch <span aria-hidden="true">→</span>
           </a>
         </div>
-        <div className="hero-panel" aria-hidden="true" />
       </section>
 
 

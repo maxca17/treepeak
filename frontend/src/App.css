@@ -21,23 +21,23 @@
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding: 0 52px;
-  height: 62px;
+  padding: 0 48px;
+  height: 56px;
   background: var(--cream);
   border-bottom: 1px solid var(--rule);
 }
 
 .nav-logo {
   font-family: 'Playfair Display', serif;
-  font-size: 21px;
+  font-size: 20px;
   font-weight: 700;
   color: var(--forest);
-  letter-spacing: -0.2px;
+  letter-spacing: -0.3px;
 }
 
 .nav-links {
   display: flex;
-  gap: 40px;
+  gap: 36px;
   align-items: center;
 }
 
@@ -45,7 +45,6 @@
   font-size: 14px;
   font-weight: 400;
   color: var(--text-muted);
-  letter-spacing: 0.1px;
   transition: color 0.15s;
 }
 
@@ -55,46 +54,39 @@
 
 /* ── Hero ── */
 .hero {
-  display: grid;
-  grid-template-columns: 1fr 360px;
-  min-height: calc(100svh - 62px);
   background: var(--cream);
+  padding: 88px 48px 108px;
+  border-bottom: 1px solid var(--rule);
 }
 
 .hero-body {
-  padding: 88px 72px 88px 52px;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
+  max-width: 680px;
 }
 
 .hero-kicker {
   display: block;
-  font-size: 11px;
-  font-weight: 600;
-  letter-spacing: 2px;
-  text-transform: uppercase;
-  color: var(--sage);
-  margin-bottom: 28px;
+  font-size: 13px;
+  font-weight: 400;
+  color: var(--text-muted);
+  margin-bottom: 26px;
 }
 
 .hero-body h1 {
   font-family: 'Playfair Display', serif;
-  font-size: 58px;
+  font-size: 64px;
   font-weight: 700;
-  line-height: 1.1;
-  letter-spacing: -1.2px;
+  line-height: 1.07;
+  letter-spacing: -1.8px;
   color: var(--forest);
-  margin-bottom: 28px;
-  max-width: 640px;
+  margin-bottom: 34px;
 }
 
 .hero-body p {
   font-size: 17px;
-  line-height: 1.7;
+  line-height: 1.72;
   color: var(--text-muted);
-  max-width: 500px;
-  margin-bottom: 44px;
+  max-width: 440px;
+  margin-bottom: 52px;
   font-weight: 400;
 }
 
@@ -102,234 +94,57 @@
   display: inline-flex;
   align-items: center;
   gap: 10px;
-  font-size: 15px;
-  font-weight: 600;
-  color: var(--forest);
-  border-bottom: 2px solid var(--sage);
-  padding-bottom: 3px;
-  width: fit-content;
-  transition: color 0.15s, border-color 0.15s;
+  font-size: 14px;
+  font-weight: 500;
+  color: var(--white);
+  background: var(--forest);
+  padding: 13px 24px;
+  transition: background 0.15s;
 }
 
 .hero-cta:hover {
-  color: var(--forest-mid);
-  border-color: var(--forest-mid);
-}
-
-.hero-panel {
-  background: var(--forest);
-}
-
-/* ── Services ── */
-.services {
-  background: var(--forest);
-  padding: 96px 52px;
-}
-
-.services-inner {
-  max-width: 860px;
-  margin: 0 auto;
-}
-
-.section-label {
-  font-size: 11px;
-  font-weight: 600;
-  letter-spacing: 2.5px;
-  text-transform: uppercase;
-  color: var(--sage);
-  margin-bottom: 52px;
-  padding-bottom: 20px;
-  border-bottom: 1px solid var(--rule-dark);
-  display: block;
-}
-
-.service-list {
-  display: flex;
-  flex-direction: column;
-}
-
-.service-row {
-  display: grid;
-  grid-template-columns: 56px 1fr;
-  gap: 32px;
-  padding: 40px 0;
-  border-bottom: 1px solid var(--rule-dark);
-}
-
-.service-row:last-child {
-  border-bottom: none;
-  padding-bottom: 0;
-}
-
-.service-n {
-  font-size: 12px;
-  font-weight: 500;
-  color: var(--sage);
-  letter-spacing: 1.5px;
-  padding-top: 5px;
-}
-
-.service-row h3 {
-  font-family: 'Playfair Display', serif;
-  font-size: 22px;
-  font-weight: 700;
-  color: var(--white);
-  margin-bottom: 12px;
-  letter-spacing: -0.3px;
-}
-
-.service-row p {
-  font-size: 15px;
-  line-height: 1.75;
-  color: rgba(255,255,255,0.58);
-  max-width: 540px;
-}
-
-/* ── About ── */
-.about {
-  background: var(--white);
-  padding: 96px 52px;
-}
-
-.about-inner {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: 88px;
-  max-width: 1000px;
-  margin: 0 auto 52px;
-  align-items: start;
-}
-
-.about-copy .section-label-dark {
-  font-size: 11px;
-  font-weight: 600;
-  letter-spacing: 2.5px;
-  text-transform: uppercase;
-  color: var(--text-muted);
-  margin-bottom: 28px;
-  display: block;
-}
-
-.about-copy h2 {
-  font-family: 'Playfair Display', serif;
-  font-size: 34px;
-  font-weight: 700;
-  color: var(--forest);
-  letter-spacing: -0.6px;
-  line-height: 1.2;
-  margin-bottom: 28px;
-}
-
-.about-copy p {
-  font-size: 16px;
-  line-height: 1.8;
-  color: var(--text-muted);
-  margin-bottom: 18px;
-}
-
-.about-copy p:last-child {
-  margin-bottom: 0;
-}
-
-.about-figures {
-  display: flex;
-  flex-direction: column;
-  gap: 0;
-  padding-top: 4px;
-}
-
-.figure {
-  padding: 22px 0;
-  border-bottom: 1px solid #ebe7e0;
-  display: flex;
-  flex-direction: column;
-  gap: 5px;
-}
-
-.figure:first-child {
-  padding-top: 0;
-}
-
-.figure:last-child {
-  border-bottom: none;
-  padding-bottom: 0;
-}
-
-.figure-label {
-  font-size: 11px;
-  font-weight: 600;
-  letter-spacing: 1.5px;
-  text-transform: uppercase;
-  color: var(--text-muted);
-}
-
-.figure-value {
-  font-family: 'Playfair Display', serif;
-  font-size: 26px;
-  font-weight: 700;
-  color: var(--forest);
-  letter-spacing: -0.4px;
-  line-height: 1;
-}
-
-.about-certs {
-  max-width: 1000px;
-  margin: 0 auto;
-  padding-top: 40px;
-  border-top: 1px solid #ebe7e0;
-}
-
-.about-certs p {
-  font-size: 13px;
-  color: var(--text-muted);
-  letter-spacing: 0.4px;
-  line-height: 1.8;
+  background: var(--forest-mid);
 }
 
 /* ── Contact ── */
 .contact {
   background: var(--forest);
-  padding: 100px 52px;
+  padding: 96px 48px 108px;
 }
 
 .contact-inner {
-  max-width: 600px;
-  margin: 0 auto;
-  text-align: center;
+  max-width: 860px;
 }
 
 .contact-inner h2 {
   font-family: 'Playfair Display', serif;
-  font-size: 44px;
-  font-weight: 700;
-  color: var(--white);
-  letter-spacing: -1px;
-  line-height: 1.15;
-  margin-bottom: 30px;
+  font-size: 22px;
+  font-weight: 400;
+  color: rgba(255,255,255,0.42);
+  letter-spacing: -0.2px;
+  line-height: 1.3;
+  margin-bottom: 16px;
 }
 
 .contact-email {
-  font-size: 18px;
-  font-weight: 500;
-  color: var(--sage-light);
-  letter-spacing: 0.2px;
-  border-bottom: 1px solid rgba(168,201,183,0.35);
-  padding-bottom: 2px;
-  transition: color 0.15s, border-color 0.15s;
+  display: block;
+  font-family: 'Playfair Display', serif;
+  font-size: 52px;
+  font-weight: 700;
+  color: var(--white);
+  letter-spacing: -1.2px;
+  line-height: 1;
+  transition: color 0.15s;
 }
 
 .contact-email:hover {
-  color: var(--white);
-  border-color: rgba(255,255,255,0.4);
+  color: var(--sage-light);
 }
 
 /* ── Footer ── */
 .footer {
   background: #111d17;
-  padding: 22px 52px;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
+  padding: 20px 48px;
 }
 
 .footer span {
@@ -341,73 +156,56 @@
 /* ── Responsive ── */
 @media (max-width: 960px) {
   .hero {
-    grid-template-columns: 1fr;
-    min-height: auto;
-  }
-
-  .hero-body {
-    padding: 64px 40px;
+    padding: 72px 40px 88px;
   }
 
   .hero-body h1 {
-    font-size: 44px;
+    font-size: 50px;
+    letter-spacing: -1.2px;
   }
 
-  .hero-panel {
-    display: none;
-  }
-
-  .about-inner {
-    grid-template-columns: 1fr;
-    gap: 52px;
-  }
-
-  .services,
-  .about,
   .contact {
-    padding: 72px 40px;
+    padding: 72px 40px 84px;
+  }
+
+  .contact-email {
+    font-size: 40px;
+    letter-spacing: -0.8px;
   }
 }
 
 @media (max-width: 640px) {
   .nav {
-    padding: 0 24px;
+    padding: 0 20px;
   }
 
   .nav-links {
     display: none;
   }
 
-  .hero-body {
-    padding: 52px 24px;
+  .hero {
+    padding: 52px 20px 72px;
   }
 
   .hero-body h1 {
-    font-size: 36px;
+    font-size: 38px;
+    letter-spacing: -0.8px;
   }
 
-  .service-row {
-    grid-template-columns: 1fr;
-    gap: 10px;
-  }
-
-  .service-n {
-    padding-top: 0;
-  }
-
-  .services,
-  .about,
   .contact {
-    padding: 60px 24px;
+    padding: 60px 20px 72px;
   }
 
   .contact-inner h2 {
-    font-size: 34px;
+    font-size: 18px;
+  }
+
+  .contact-email {
+    font-size: 30px;
+    letter-spacing: -0.5px;
   }
 
   .footer {
-    padding: 20px 24px;
-    flex-direction: column;
-    gap: 6px;
+    padding: 18px 20px;
   }
 }
